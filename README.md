@@ -215,7 +215,43 @@ sshd: Failed password for arvinderjeet from 192.168.9.136
 ![Splunk Brute Force Event](screenshots/07-splunk-bruteforce-event.png)
 
 ---
+## 8. Attack via SSH Detection
 
+The Windows OpenSSH events were ingested into Splunk and investigated for repeated failed authentication attempts.
+
+The investigation focused on information such as:
+
+* Source IP address
+* Target username
+* Timestamp
+* Computer name
+* Event information
+* Authentication status
+
+Example event:
+
+```text
+sshd: Failed password for arvinderjeet from 192.168.9.136
+```
+
+![Splunk Brute Force Event](screenshots/08-Attack-via-ssh.png)
+
+---
+## 9. Event 4625 unknown user attempt login Detection
+
+The Windows OpenSSH events were ingested into Splunk and investigated for repeated failed authentication attempts.
+
+The investigation focused on information such as:
+
+* unknown user
+* Target username
+* Timestamp
+* Computer name
+* Event information
+
+![Splunk Brute Force Event](screenshots/09-Event-4625.png)
+
+---
 # 🔎 Splunk Investigation
 
 Example search used during the investigation:
